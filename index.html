@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Películas y Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendador de Películas y Libros</h1>
+        
+        <label for="gustos">Selecciona un género:</label>
+        <select id="gustos">
+            <option value="">--Elige un género--</option>
+            <option value="acción">Acción</option>
+            <option value="romance">Romance</option>
+            <option value="ciencia ficción">Ciencia Ficción</option>
+            <option value="fantasía">Fantasía</option>
+            <option value="misterio">Misterio</option>
+        </select>
+        
+        <label for="vote-average">Promedio de votos (1-10):</label>
+        <input type="number" id="vote-average" min="1" max="10" step="0.1" placeholder="Ej: 7.5">
+        
+        <label for="release-date">Fecha de salida (después de):</label>
+        <input type="date" id="release-date">
+        
+        <label for="adult">¿Para adultos?</label>
+        <input type="checkbox" id="adult">
+     
+        
+        <button id="btn-recomendar">Recomendar</button>
+        <div id="resultado"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
